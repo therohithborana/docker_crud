@@ -24,15 +24,20 @@ The application allows you to perform basic CRUD operations on items stored in a
    ```bash
    git clone https://github.com/therohithborana/docker_crud.git
    ```
-2. Navigate to the project directory:
+
+3. Navigate to the project directory:
    ```bash
    cd docker_crud
    ```
-3. Start the application using Docker Compose:
+      or run the command
+   ```bash
+   curl -o mongodb.yaml https://raw.githubusercontent.com/therohithborana/docker_crud/main/mongodb.yaml
+``
+4. Start the application using Docker Compose:
    ```bash
    docker-compose -f mongodb.yaml up -d
    ```
-4. Access the application:
+5. Access the application:
    - **Node.js App**: [http://localhost:3000](http://localhost:3000)
    - **Mongo Express**: [http://localhost:8081](http://localhost:8081)
 
